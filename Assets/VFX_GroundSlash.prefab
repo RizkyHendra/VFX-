@@ -62,9 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f69433cda63cbda44bb2648df123418b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  slowDownRate: 0.01
-  detectingDistance: 0.1
+  speed: 25
+  slowDownRate: 0.1
+  detectingDistance: 3
   destroyDelay: 5
 --- !u!1 &2995880595807052361
 GameObject:

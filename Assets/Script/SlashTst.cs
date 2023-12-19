@@ -34,7 +34,9 @@ public class SlashTst : MonoBehaviour
     {
         for(int i = 0; i<slashes.Count; i++)
         {
+            
             yield return new WaitForSeconds(slashes[i].delay);
+            CameraShaker.Invoke();
             slashes[i].slashObj.SetActive(true);
         }
 

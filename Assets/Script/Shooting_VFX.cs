@@ -7,11 +7,14 @@ public class Shooting_VFX : MonoBehaviour
     public Transform bullerSpawnPointOne, bullerSpawnPointTwo, bullerSpawnPointThree, bullerSpawnPointFour;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
+    public GameObject cameraTwo;
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            cameraTwo.SetActive(true);
+            CameraShaker.Invoke();
             var bulletOne = Instantiate(bulletPrefab, bullerSpawnPointOne.position, bullerSpawnPointOne.rotation);
             bulletOne.GetComponent<Rigidbody>().velocity = bullerSpawnPointOne.forward * bulletSpeed;
 
